@@ -40,3 +40,11 @@ Using the Google geocoding API, we obtained the two letter country code for the 
 * For the UN M49 system, South America is the only continent that doesn't contain any subregions.
 
 * The UN doesn't recognize Taiwan as a country, but our data set does. We decided to manually assign Taiwan in the Asia/East Asia region/sub-region.
+
+### To reproduce cleaning
+
+* Use NewPythonData environment for data cleaning
+* Add config.py file to project directory
+  * Add to config.py: gkey = 'Your geocoding api key here'
+* Launch and run all of Global Regions.ipynb
+* Launch and run all of Clean Data.ipynb
