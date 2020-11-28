@@ -31,3 +31,8 @@
 body {
   background-color: #343A40;
 }
+
+.container {
+  background-color: #FFF;
+  opacity: 0.9;
+}
