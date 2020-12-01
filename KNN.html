@@ -37,46 +37,45 @@
       <div class="media">
           <div class="media-body">
               <h2 class="mt-0">Machine Learning with your K-Nearest Neighbor</h2>
-              <p></p>
+              <br>
               <h5 class="mt-0">What is K-Nearest Neighbors?</h5>
               <p>K-nearest neighbors is a supervised machine learning algorithm that can be used for both classification and regression problems. It assumes similar things exist in close proximity to each other. KNN does require that the input data have a label for its analysis.</p>
-              <p>“KNN works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query, then votes for the most frequent label (in the case of classification) or averages the labels (in the case of regression).” </p>
-              <img src="static/images/knn3.png" class="align-self-center mr-3" width="300" height="300">
-              <p></p>
+              <br>
+              <center><img src="static/images/knn3.png" class="align-self-center mr-3" width="350" height="300"></center>
+              <br></br>
+              <center><p class="font-weight-bold">“KNN works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query, then votes for the most frequent label (in the case of classification) or averages the labels (in the case of regression).” </p></center>
+              <br>
               <h5>Pros and Cons of KNN</h5>
-              <ol>
+              <br>
+              <ul>
                   <li>Pro - Non-parametric: KNN makes no assumptions about the underlying data. Consequently, it may be applied to a broad set of problems without the need to worry about the properties of the data.</li>
                   <li>Pro - Lazy Learning: The algorithm has no training phase. Instead, it makes a calculation at the moment of classification. This allows KNN to be a pretty dynamic machine learning technique by allowing additional data to be added without the need to re-train it</li>
-                  <li>Pro - Highly Non-Linear Data: Because no assumptions are made on the data and because no formal model is calculated, KNN works well to predict highly non-linear data.</li>
                   <li>Pro - Multi-Class Problems: Unlike some other algorithms that require tweaking for classifications involving more than 2 classes, KNN can be generalized into as many classes as necessary.</li>
-                  <li>Pro - Intuitive: the algorithm is relatively simple to understand and interpret even to a non-technical audience.</li>
+                  <br>
                   <li>Con - Memory-Intensive: Because a new data point must be compared to every other data point in the training data, KNN often uses a lot of processing power to make a classification, especially on bigger data sets.</li>
                   <li>Con - Curse of Dimensionality: Like other algorithms that use distance as a metric, KNN struggles to predict data with a lot of input variables.</li>
                   <li>Con - Sensitive to Outliers: Outliers present a fundamental issue to KNN. By simply choosing the nearest neighbors, no matter how far they may be, outliers can skew its predictions.</li>
-                  <li>Con - Missing Data: KNN has no approach to handle missing data. If anything is missing, the entire data point cannot be predicted accurately.</li>
-              </ol>
-              <p></p>
-              <img src="static/images/mrrogers.png" class="align-self-center mr-3">
+              </ul>
+              <br></br>
+              <center><img src="static/images/mrrogers.png" class="align-self-center mr-3"></center>
+              <br>
+              <br>
               <h5>How we used KNN</h5>
-              <p>We used KNN as a classifier for our project.  We ran two different data sets through the algorithm. One was the default data set with the 67 musical indicators. The second data set contained an additional 40+ musical properties for each song.
+              <p>We used KNN as a classifier for our project.  We ran two different data sets through the algorithm. One was the default data set with the original 67 musical indicators. The second data set contained an additional 40+ musical properties for each song.
                   We wanted to see if the algorithm was more successful with one data set over the other.
                   We first split the music data into training and testing sets. The data was then encoded for analysis, and scaled using a Standard Scaler. 
-                  A KNN classifier model was created, which looped through the various K values. The results indicate that the K=15 lead to the most stable and accurate classification results</p>
-              <img src="static/images/...">
-          </div>
+                  A KNN classifier model was created, which looped through the various K values. The results indicate that K=9 leads to the most stable and accurate classification results.</p>
+                <div class="row">
+                  <div class="column">
+                    <img src="static/images/default_knn.png">
+                      <center><p>Test accuracy was 0.434</p></center>
+                  </div class="column">
+                    <img src="static/images/chromatic_knn.png">
+                      <center>><p>Test accuracy was 0.370</p></center>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- <div class="row">
-        <div class="col-12 col-sm-12 col-md-12">
-            <h1>Machine Learning with your K-Nearest Neighbor(KNN)</h1>
-            <left> <img src="static/mrrogers.png" height="300" width="260"></left>
-
-        </div>
-    </div> -->
-
-
-
-
   </body>
 
 
