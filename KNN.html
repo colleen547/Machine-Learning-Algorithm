@@ -48,13 +48,17 @@
               <h5>Pros and Cons of KNN</h5>
               <br>
               <ul>
-                  <li>Pro - Non-parametric: KNN makes no assumptions about the underlying data. Consequently, it may be applied to a broad set of problems without the need to worry about the properties of the data.</li>
-                  <li>Pro - Lazy Learning: The algorithm has no training phase. Instead, it makes a calculation at the moment of classification. This allows KNN to be a pretty dynamic machine learning technique by allowing additional data to be added without the need to re-train it</li>
-                  <li>Pro - Multi-Class Problems: Unlike some other algorithms that require tweaking for classifications involving more than 2 classes, KNN can be generalized into as many classes as necessary.</li>
-                  <br>
-                  <li>Con - Memory-Intensive: Because a new data point must be compared to every other data point in the training data, KNN often uses a lot of processing power to make a classification, especially on bigger data sets.</li>
-                  <li>Con - Curse of Dimensionality: Like other algorithms that use distance as a metric, KNN struggles to predict data with a lot of input variables.</li>
-                  <li>Con - Sensitive to Outliers: Outliers present a fundamental issue to KNN. By simply choosing the nearest neighbors, no matter how far they may be, outliers can skew its predictions.</li>
+                  <li>Pro - KNN is parametric, i.e. it makes no assumptions about the data. Therefore, it mcan be applied to a broad set of problems without needing to worry about the data's properties.</li>
+                  <p></p>
+                  <li>Pro - Lazy Learning: There is no training phase. KNN makes its calculation at the moment of classification. This allows additional data to be added without the need to re-train it.</li>
+                  <p></p>
+                  <li>Pro - KNN can be used with as many classes at necessary, unlike some other alogrithms that require additional tweaking for anything more than 2 classes.</li>
+                  <p></p>
+                  <li>Con - Can be memory-intensive, especially with larger data sets, because a new data point must be compared to every other existing data point.</li>
+                  <p></p>
+                  <li>Con - Because KNN uses distance as a metric, it can struggle with data sets that have a lot of inputs.</li>
+                  <p></p>
+                  <li>Con - The algorithm is sensitive to outliers. The nearest neighbor choses may still be distant from the specific data point.</li>
               </ul>
               <br></br>
               <center><img src="static/images/mrrogers.png" class="align-self-center mr-3"></center>
