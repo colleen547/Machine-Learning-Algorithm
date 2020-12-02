@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Predicting Origin of Global Music</title>
+  </head>
+
+
+
+  <body>
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Included jquery for sharing common html -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+    
+    </div>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("static/common_html/nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+    <div class="container">
+      <!-- Row 1 -->
+      <div class="media">
+          <div class="media-body">
+              <h2 class="mt-0">Machine Learning with your K-Nearest Neighbor</h2>
+              <br>
+              <h5 class="mt-0">What is K-Nearest Neighbors?</h5>
+              <p>K-nearest neighbors is a supervised machine learning algorithm that can be used for both classification and regression problems. It assumes similar things exist in close proximity to each other. KNN does require that the input data have a label for its analysis.</p>
+              <br>
+              <center><img src="static/images/knn3.png" class="align-self-center mr-3" width="350" height="300"></center>
+              <br></br>
+              <center><p class="font-weight-bold">“KNN works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query, then votes for the most frequent label (in the case of classification) or averages the labels (in the case of regression).” </p></center>
+              <br>
+              <h5>Pros and Cons of KNN</h5>
+              <br>
+              <ul>
+                  <li>Pro - KNN is parametric, i.e. it makes no assumptions about the data. Therefore, it mcan be applied to a broad set of problems without needing to worry about the data's properties.</li>
+                  <p></p>
+                  <li>Pro - Lazy Learning: There is no training phase. KNN makes its calculation at the moment of classification. This allows additional data to be added without the need to re-train it.</li>
+                  <p></p>
+                  <li>Pro - KNN can be used with as many classes at necessary, unlike some other alogrithms that require additional tweaking for anything more than 2 classes.</li>
+                  <p></p>
+                  <li>Con - Can be memory-intensive, especially with larger data sets, because a new data point must be compared to every other existing data point.</li>
+                  <p></p>
+                  <li>Con - Because KNN uses distance as a metric, it can struggle with data sets that have a lot of inputs.</li>
+                  <p></p>
+                  <li>Con - The algorithm is sensitive to outliers. The nearest neighbor choses may still be distant from the specific data point.</li>
+              </ul>
+              <br></br>
+              <center><img src="static/images/mrrogers.png" class="align-self-center mr-3"></center>
+              <br>
+              <br>
+              <h5>How we used KNN</h5>
+              <p>We used KNN as a classifier for our project.  We ran two different data sets through the algorithm. One was the default data set with the original 67 musical indicators. The second data set contained an additional 40+ musical properties for each song.
+                  We wanted to see if the algorithm was more successful with one data set over the other.
+                  We first split the music data into training and testing sets. The data was then encoded for analysis, and scaled using a Standard Scaler. 
+                  A KNN classifier model was created, which looped through the various K values. The results indicate that K=9 leads to the most stable and accurate classification results.</p>
+                <div class="row">
+                  <div class="column">
+                    <img src="static/images/default_knn.png">
+                      <center><p>Test accuracy was 0.434</p></center>
+                  </div class="column">
+                    <img src="static/images/chromatic_knn.png">
+                      <center>><p>Test accuracy was 0.370</p></center>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+
+
+
+</html>
