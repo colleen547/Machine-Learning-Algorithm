@@ -55,7 +55,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #343A40;
   border-radius: 0;
 }
 
@@ -73,7 +73,6 @@ body {
   font-size: 30px;
   
 }
-
 
 p {
   text-indent: -2px;
