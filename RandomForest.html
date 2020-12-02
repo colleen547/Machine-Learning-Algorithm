@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Random Forests for Regression and
+      Classification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=12">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    
+    <!-- <link rel="stylesheet" href="static/css/style.css"> -->
+</head>  
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Home<a></a>
+                    <a class="navbar-brand" href="Analysis & Visualization.html">Analysis and Visualization<a></a>
+            </div>
+        </nav>
+        <div class="hero text-center">
+          <h1 style="color:green;"><strong>Random Forests For Regression and
+              Classification</strong><h1>
+        </div>
+                       
+                </div>
+            </div>
+
+    
+  </head>
+  <body>
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Included jquery for sharing common html -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+</div>
+<body style="text-align:center;"> 
+  <div class="container">
+  <div class="jumbotron.forest">
+    <img src="static/images/forest_wide.gif" width="100%" height="100%" class="d-inline-block align-centre"><br>  <br>  
+    <img src="" alt=""> <br> 
+</div>
+<h1 style="color:green;"><strong>Random Forests for Regression and Classification</strong><h1
+  ><p>We used Random Trees to explore and predict the geographical distribution of music. 
+   Dataset extracted from this<a href="http://archive.ics.uci.edu/ml/datasets/geographical+original+of+music"> website <a></a>
+  </p>
+ </div>     
+  </div>
+  <br
+  ><h1 style="color:green;"><strong>Introduction to Decision Trees and Random Forests.</strong><h1
+
+    ><p>Decision trees are a predictive model that uses a set of binary rules applied to calculate a target value. Can be used for classification 
+      (categorical variables) or regression (continuous variables) Applications Rules are developed using software available in many statistics 
+      packages. Different algorithms are used to determine the “best” split at a node </p>
+      
+  <h1 style="color:green;"><strong>Classification Trees :</strong><h1
+    
+  ><p>Classification trees work by using training data to build a model.
+      The Tree generator determines:
+    <ol> Which variable to split at a node and the value of the split.</ol>
+    <ol> Decision to stop (make a terminal note) or split again </ol>
+    <ol> Assign terminal nodes to a class </ol> 
+  </p> 
+  
+    <h1 style="color:green;"><strong>Regression Trees:</strong><h1
+    
+    ><p>Regression calculates relationship between predictor and response variables. 
+       Structure is similar to classification tree.Terminal nodes are a predicted function (model) values.
+       Predicted values are limited to the values in the terminal nodes. </p>
+  
+     <h1 style="color:green;"><strong>Decision tree advantages:</strong><h1
+    
+     ><p>to interpret the decision rules. <br>  
+      Nonparametric so it is easy to incorporate a range of numeric or categorical data layers and there is 
+      no need to select unimodal training data. <br>
+      Robust with regard to outliers in training data <br>
+      Classification is fast once rules are developed
+      </p> 
+
+    <h1 style="color:green;"><strong> Disadvantages of decision trees</strong><h1
+    ><br>
+    Decision trees tend to over fit training data which can give poor results when applied to the full data set 
+    Splitting perpendicular to feature space axes is not always efficient 
+    Not possible to predict beyond the minimum and maximum limits of the response variable in the training data
+    
+    <h1 style="color:green;"><strong> Random forests:</strong><h1
+    ><br>
+    Random Forests are an ensemble classifier using many decision tree models. 
+    They can be used for classification or regression. Accuracy and variable importance information is provided with the results. 
+    A different subset of the training data are selected (~2/3), with replacement, to train each tree 
+    Remaining training data (OOB) are used to estimate error and variable importance.  
+    Class assignment is made by the number of votes from all of the trees and for regression the average of the results is used.
+    <br>
+  <h1 style="color:green;"><strong>  Common variables for random forests include:</strong><h1
+
+    •	Input data (predictor and response) <br>
+    •	Number of trees <br>
+    •	Number of variables to use at each split <br>
+    •	Options to calculate error and variable significance information <br>
+    •	Sampling with or without replacement 
+    <br>
+   <h1 style="color:green;"><strong>  Advantages of random forests :</strong><h1
+    ><br> need for pruning trees  
+    Accuracy and variable importance generated automatically 
+    Overfitting is not a problem 
+    Not very sensitive to outliers in training data 
+    Easy to set parameters
+    <br>
+  <h1 style="color:green;"><strong> Disadvantages of random forests</strong><h1
+      ><br>
+    Regression trees can't predict beyond range in the training data In regression extreme values are often not predicted accurately i.e. – 
+    underestimate highs and overestimate lows  </p>
+
+  <br>
+    Sources: <br> 
+    <em>Leo Breiman - Professor emeritus of statistics at the University of California, Berkeley <br></em>
+    <em>Ned Horning - American Museum of Natural History's Center for Biodiversity and Conservation</em>
+ 
+
+  </body>  
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("static/common_html/RF_Nav.html");
+        });
+        </script>
+    </div>
+   
+    </body>
+
+
+  </html>
+  

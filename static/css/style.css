@@ -20,6 +20,32 @@
   overflow: hidden;
 }
 
+.jumbotron.forest {
+  background-image:url("static/images/forest_wide.gif");
+  height:100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom:1px solid #ff6a00
+
+
+}
+
+.jumbotron.AnalsisViz {
+  background-image: url("static/imagesAnalysisViz/.gif");
+  height:100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom:1px solid #ff6a00
+}
+
+.jumbotron .container {
+  position: absolute;;
+  top:50px;
+}
+
+
 .jumbotron h1 {
   color: #FFF;
 }
@@ -29,5 +55,56 @@
 }
 
 body {
-  background-color: #343A40;
+  background-color: black;
+  border-radius: 0;
 }
+
+.container {
+  background-color: #FFF;
+  opacity: 0.9;
+}
+.nav-link1{
+  color:green;
+}
+
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+  font-size: 30px;
+  
+}
+
+
+p {
+  text-indent: -2px;
+  word-spacing: normal;
+  letter-spacing:normal;
+  padding-left:10px;
+  padding-right:10px;
+  font-size: 40px;
+  text-align: start;
+  
+
+}
+h1 {
+  text-indent: 5px;
+  word-spacing: 10px;
+  letter-spacing:1px;
+  padding-left:10px;
+  padding-right:10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  text-indent: 5px;
+  word-spacing: 10px;
+  letter-spacing:1px;
+  padding-left:10px;
+  padding-right:10px;
+  font-size: 40px;
+  text-align: center;
+  
+}
+
+
