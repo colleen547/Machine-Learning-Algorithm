@@ -1,182 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Random Forests for Regression and
-      Classification</title>
-    <meta name="viewport" content="width=device-width, initial-scale=12">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     
-    <!-- <link rel="stylesheet" href="static/css/style.css"> -->
-</head>  
-<body>
-    <div class="wrapper">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Home<a></a>
-                    
-            </div>
-        </nav>
-        <div class="hero text-center">
-          <h1 style="color:green;"><strong>Random Forests For Regression and
-              Classification</strong><h1>
-        </div>
-                       
-                </div>
-            </div>
-
-    
-  </head>
-  
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    <!-- Included jquery for sharing common html -->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
     <!-- Custom CSS -->
-    <!--<link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 
-  <!-Navigation bar-->
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+    </ul>
+  </nav>
+</div>
+
+ <!--end of Navigation bar-->
+
+     <header>
+      <div class="container">
+        <div id="branding">
+          <h1><i class="fa fa-rocket"></i> <span class="highlight"><strong>Random Forests</strong></span> <strong>Algorithm</strong></h1>
+          <img src="static/images/forest_wide.gif" width="cover" height="cover" ><br>
+          <img  alt=""> <br> 
+        </div>   
+ 
+    </header>
+ 
     <div id="nav-placeholder">
 
-</div>
-<div class="container">
-<body style="text-align:left;"> 
-  <div class="container">
-  <div class="jumbotron.forest">
-    
-</div>
-    
-    <img src="static/images/forest_wide.gif" width="100%" height="100%" class="d-inline-block align-centre"><br>  <br>  
-    <img src="" alt=""> <br> 
-</div>
-<h1 style="color:green;"><strong>Random Forests for Regression and Classification</strong><h1
-  ><p>We used Random Trees to explore and predict the geographical distribution of music. 
-   Dataset extracted from this<a href="http://archive.ics.uci.edu/ml/datasets/geographical+original+of+music"> website <a></a>
-  </p>
- 
-  <br
-  ><h1 style="color:green;"><strong>Introduction to Decision Trees and Random Forests.</strong><h1
+    <!--Intro-->
 
-    ><p>Decision trees are a predictive model that uses a set of binary rules applied to calculate a target value. Can be used for classification 
-      (categorical variables) or regression (continuous variables) Applications Rules are developed using software available in many statistics 
-      packages. Different algorithms are used to determine the “best” split at a node </p>
+    <section id="showcase">
+      <div class="container">
+        <h1><strong>Introduction to Decision Trees and Random Forests.</strong></h1>
+        <p><h2></h2>Decision trees are a predictive model that uses a set of binary rules applied to calculate a target value. Can be used for classification 
+            (categorical variables) or regression (continuous variables) Applications Rules are developed using software available in many statistics 
+            packages. Different algorithms are used to determine the “best” split at a node </p><br>
+            </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <i class="fa fa-signal fa-5x"></i>
+          <h3><strong>Classification Trees :</strong></h3>
+          <p><h2></h2>Classification trees work by using training data to build a model.
+            The Tree generator determines, Which variable to split at a node and the value of the split,
+            Decision to stop (make a terminal note) or split again and
+             Assign terminal nodes to a classification</p>
+        </div>
+        <div class="box">
+          <i class="fa fa-photo fa-5x"></i>
+          <h3><strong>Regression Trees:</strong></h3>
+          <p><h2></h2>Regression calculates relationship between predictor and response variables. 
+            Structure is similar to classification tree.Terminal nodes are a predicted function (model) values.
+            Predicted values are limited to the values in the terminal nodes.</p>
+        </div>
+        <div class="box">
+          <i class="fa fa-cube fa-5x"></i>
+          <h3><strong> Random forests:</strong></h3>
+          <p><h2></h2>Random Forests are an ensemble classifier using many decision tree models. 
+            They can be used for classification or regression. Accuracy and variable importance information is provided with the results. 
+            A different subset of the training data are selected (~2/3), with replacement, to train each tree 
+            Remaining training data (OOB) are used to estimate error and variable importance.  
+            Class assignment is made by the number of votes from all of the trees and for regression the average of the results is used.</p><br
+        </div>
+      </div>
+    </section>
+    <!-- ======= Analysis & Visualization Section ======= -->
+<section>
+        <div class="container">
+            <div class="box">
+              <i class="fa fa-signal fa-5x"></i>
+              <h3><strong>Results and Analysis </strong></h3>
+              
+              <p><h2></h2>Our Dataset was divided into two files. The Default File and the Chromatic File.
+                In the default file, the first 68 columns are audio features of the track, and the last two columns are the origin of the music, 
+                represented by latitude and longitude. In the chromatic file, the first 116 columns are audio features of the track, and the last two columns 
+                are the origin of the music.<br</p>
+
+                <p><h2></h2>Our Random Forest Algorithm produced the following results: <br>
+                <br>
+
+                  <p>The <strong>Default File</strong> had a prediction accuracy score of : <br>&#9632; <strong>0.358</strong></p> 
+                  <p>The <strong>Chromatic File</strong> had a prediction accuracy score of : <br>&#9632; <strong>0.335</strong></p>.
+
+              <p><h2></h2>Click The Link Below To view the Analysis Using Pandas on Jupyter Notebook</p>
+              <p></h3><a href="https://github.com/hauckc21/Final-Project---Team-9"> <p><h2></h2>GitHub Repo <a></h3></p>
+            </div>
+    
+    <!---Embed Visualization Images-->
+    <section>
+        <h3><strong>Scroll  Below To view our Random Forest Visualizations:</strong></h3>
+        <br><br>
+        <p><h3><strong>Decision Tree:</strong></h3><br<p></p>
       
-  <h1 style="color:green;"><strong>Classification Trees :</strong><h1
-    
-  ><p>Classification trees work by using training data to build a model.
-      The Tree generator determines:
-    <ol> Which variable to split at a node and the value of the split.</ol>
-    <ol> Decision to stop (make a terminal note) or split again </ol>
-    <ol> Assign terminal nodes to a class </ol> 
-  </p> 
-  
-    <h1 style="color:green;"><strong>Regression Trees:</strong><h1
-    
-    ><p>Regression calculates relationship between predictor and response variables. 
-       Structure is similar to classification tree.Terminal nodes are a predicted function (model) values.
-       Predicted values are limited to the values in the terminal nodes. </p>
-  
-     <h1 style="color:green;"><strong>Decision tree advantages:</strong><h1
-    
-     ><p>to interpret the decision rules. <br>  
-      Nonparametric so it is easy to incorporate a range of numeric or categorical data layers and there is 
-      no need to select unimodal training data. <br>
-      Robust with regard to outliers in training data <br>
-      Classification is fast once rules are developed
-      </p> 
+        <div class="box"><br
+        ><i class="fa fa-photo fa-5x"></i>
+            
+            <img src="static/images/decision_tree.png" width="100%" height="100%" ><br> 
+             <a href="static/images/decision_tree.png">Decision Tree</a>
+               
+        </div>
+        <div class="box"><br>
+            <i class="fa fa-cube fa-5x"></i>
+            <h3><strong> Random forests:</strong></h3><br
+        br> 
+            <img src="static/images/rt_5trees-CR.png" width="100%" height="100%" ><br>
+            <a href="static/images/rt_5trees-CR.png">Random Trees Chromatic File</a> 
 
-    <h1 style="color:green;"><strong> Disadvantages of decision trees</strong><h1
-    ><br>
-    Decision trees tend to over fit training data which can give poor results when applied to the full data set 
-    Splitting perpendicular to feature space axes is not always efficient 
-    Not possible to predict beyond the minimum and maximum limits of the response variable in the training data
-    
-    <h1 style="color:green;"><strong> Random forests:</strong><h1
-    ><br>
-    Random Forests are an ensemble classifier using many decision tree models. 
-    They can be used for classification or regression. Accuracy and variable importance information is provided with the results. 
-    A different subset of the training data are selected (~2/3), with replacement, to train each tree 
-    Remaining training data (OOB) are used to estimate error and variable importance.  
-    Class assignment is made by the number of votes from all of the trees and for regression the average of the results is used.
-    <br>
-  <h1 style="color:green;"><strong>  Common variables for random forests include:</strong><h1
+            
+        </div>
+        <br>
+        <div class="box"><br>
+            <i class="fa fa-cube fa-5x"></i>
+            <img src="static/images/rt_5trees-DF.png" width="100%" height="100%" ><br> 
+         <a href="static/images/rt_5trees-DF.png">Random Trees Default File</a> 
+         <br>
+         <br>
+        </div>
+        <div>
 
-  ><br> 
-    •	Input data (predictor and response) ><br
-  > •	Number of trees <br>
-    •	Number of variables to use at each split <br>
-    •	Options to calculate error and variable significance information <br>
-    •	Sampling with or without replacement 
-    <br>
-   <h1 style="color:green;"><strong>  Advantages of random forests :</strong><h1
-    ><br> need for pruning trees  
-    Accuracy and variable importance generated automatically 
-    Overfitting is not a problem 
-    Not very sensitive to outliers in training data 
-    Easy to set parameters
-    <br>
-  <h1 style="color:green;"><strong> Disadvantages of random forests</strong><h1
-      ><br>
-    Regression trees can't predict beyond range in the training data In regression extreme values are often not predicted accurately i.e. – 
-    underestimate highs and overestimate lows  </p>
+        </div>
 
-  <br>
-    Sources: <br> 
-    <em>Leo Breiman - Professor emeritus of statistics at the University of California, Berkeley <br></em>
-    <em>Ned Horning - American Museum of Natural History's Center for Biodiversity and Conservation</em>
-  </div>
 
-  <!-- ======= Analysis & Visualization Section ======= -->
-  <div class="container">
-  <body style="text-align:left;"> 
-    <div class="container">
-    <div class="jumbotron.forest">
-      
-  <h2> Click Link Below To view our our Forest Analysis on Jupyter Notebook</h2>
-  <p></h2><a href="https://github.com/hauckc21/Final-Project---Team-9"> GitHub Repo <a></h2></p>
+    </div>
+</section>
 
-<!---Embed Visualization Images-->
-
-<p><h2> Scroll  Below To view our Random Forest Visualizations</h2><p></p>
-
-       <img src="static/images/decision_tree.png" width="25%" height="25%" ><br> 
-       <img src="" alt="">
-        <a href="static/images/decision_tree.png">Decision Tree</a>  
-        <img src="static/images/decision_tree.png" alt="" 
-      
-    
-        ></div>
-                           <br>
-         <body style="text-align:center;"> 
-      <div class="container"></div>
-      <div class="jumbotron.randomTreesDF"></div>
-         <img src="static/images/rt_5trees-CR.png" width="30%" height="30%" ><br> 
-         <img src="" alt=""> <br>
-                <a href="static/images/rt_5trees-CR.png">Random Trees Chromatic File</a> 
-                  <img src="static/images/rt_5trees-CR.png" alt="" class="img-fluid">
-                </a>
-     </div>
-
-     <div>
-                      <br>
-          <body style="text-align:center;"> 
-      <div class="container"></div>
-      <div class="jumbotron.randomTreesDF"></div>
-        <img src="static/images/rt_5trees-DF.png" width="30%" height="30%" ><br> 
-        <img src="" alt=""> <br>
-                <a href="static/images/rt_5trees-DF.png">Random Trees Default File</a> 
-        <img src="static/images/rt_5trees-DF.png" alt="" class="img-fluid"></a>
-                  
-
-    
-</div> 
+<footer>
+    Sources: Leo Breiman - Professor emeritus of statistics <br> 
+    the University of California, Berkeley</p>
+</footer>
 </body>
-
 </html>
-
-
 
