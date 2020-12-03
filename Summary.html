@@ -33,28 +33,57 @@
     </script>
     <!--end of Navigation bar-->
     <div class="container">
+      <br>
       <h1>Project Summary</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
+      <div class="row">
+        <div class="col-sm">
+          <br>
+          Our exploration of the two data sets with the three aforementioned machine learning algorithms returned some surprising results. Of note:
+          <ul>
+            <p></p>
+            <li>Two of the algorithms (RF, KNN) performed better on the default data set than the chromatic. One may haven hypothesized otherwise, given the chromatic data had nearly double the indicators. "TEAM IS THIS STAT SIG?"</li>
+            <p></p>
+            <li>Not a one algorithm exceeded 50% accuracy. "TEAM WHAT CAN WE SAY COULD BE DONE TO IMPROVE IN FUTURE?"</li>
+            <p></p>
+            <li>The SVM results drilled down on sub region accuraccy a little further. Interestingly, the Carribbean, and Central American, sub regions were the easiest to categorize.</li>
+          </ul> 
+        </div>
+          <span class="border border-info"></span>
+            <div class="col-sm">
+              <br>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-white-50 bg-dark">Algorithm</th>
+                      <th scope="col" class="text-white-50 bg-dark">Default(% ACC)</th>
+                      <th scope="col" class="text-white-50 bg-dark">Chromatic(% ACC)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Random Forest</th>
+                      <td>0.358</td>
+                      <td>0.335</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">KNN</th>
+                      <td>0.434</td>
+                      <td>0.370</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">SVM</th>
+                      <td>0.390</td>
+                      <td>0.410</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="row"><img src="map.png">Future Map Image</div>
+        </div>
     </div>
-
-
   </body>
 </html>
 
