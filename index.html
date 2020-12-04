@@ -12,7 +12,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="static/css/style.css">
 
-    <title>Predicting the Origin of Global Music</title>
+    <title>Home</title>
   </head>
   
   <body>
@@ -25,32 +25,40 @@
 
     <!--Navigation bar-->
     <div id="nav-placeholder">
-
+      <script>
+      $(function(){
+        $("#nav-placeholder").load("static/common_html/nav.html");
+      });
+      </script>
+    <!-- end of Navigation bar -->
     </div>
+
     <div class="jumbotron">
+
+    <!--Video-->
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="static\videos\background_music.mp4"
             type="video/mp4">
       </video>
+    <!--end Video-->
 
       <h1 class="display-4">Predicting the Origin of Global Music</h1>
       <p class="lead">Using various Machine Learning classification algorithms, we predicted where in the world songs originated from.</p>
       <hr class="my-4">
 
-      <audio controls autoplay style="display:none">
-        <source src="static/audio/cinematic-world-short.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
       <p>Explore our site!</p>
       <hr class="my-4">
+
+      <!-- Tableau Map -->
+      <!-- <div class='tableauPlaceholder' id='viz1607060400361' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalMusicRegionSub-RegionCountry&#47;CountryGlobalMap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GlobalMusicRegionSub-RegionCountry&#47;CountryGlobalMap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalMusicRegionSub-RegionCountry&#47;CountryGlobalMap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div><script type='text/javascript'>var divElement = document.getElementById('viz1607060400361');var vizElement = divElement.getElementsByTagName('object')[0];vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script></div>
+      </div> -->
+
     </div>
 
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("static/common_html/nav.html");
-    });
-    </script>
-    <!--end of Navigation bar-->
+    <div>
+      <!-- Tableau Map -->
+      <div class='tableauPlaceholder' id='viz1607060400361' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalMusicRegionSub-RegionCountry&#47;CountryGlobalMap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GlobalMusicRegionSub-RegionCountry&#47;CountryGlobalMap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalMusicRegionSub-RegionCountry&#47;CountryGlobalMap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div><script type='text/javascript'>var divElement = document.getElementById('viz1607060400361');var vizElement = divElement.getElementsByTagName('object')[0];vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script> -->
+    </div>
 
   </body>
 </html>
