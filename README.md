@@ -5,8 +5,6 @@ Team 9: Chris Hauck, Colleen Banzhof, Ken Njema, Eric Lewiston
 
 ## Origin of Global Music
 
-Website Link: TODO
-
 Our goal is to use machine learning to attempt to predict where a song originated from by using various characteristics of that song. The data set we're using contains 1095 tracks from 33 different countries, and only includes traditional, ethnic or 'world' only. Western music is not included as it's reach and influence is global.
 
 ## Data Origin
