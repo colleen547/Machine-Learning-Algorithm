@@ -43,9 +43,9 @@
             <p></p>
             <li>For two of the algorithms, the additional inputs in the chromatic dataset did not lead to a more accuratate outcome. Perhaps the extra inputs created too much noise. The fact that the chromatic dataset is based on the western, 12 note scale could also lead to confusion.</li>
             <p></p>
-            <li>Not a one algorithm exceeded 50% accuracy. In the future, exploring a larger dataset, or having a more even distribution among the song's region origin, may end  </li>
+            <li>The Sub-Region results did not accomplish accuracy greater than 50%, so we investigated results using the Regions (a much broader category). The results from this testing is shown below.</li>
             <p></p>
-            <li>The SVM results drilled down on sub region accuraccy a little further. Interestingly, the Carribbean, and Central American, sub regions were the easiest to categorize.</li>
+            <li>As you can see the most accurate Region preditions tended to correlate with Regions that had a lot of data. For this reason, we suggest that in the future, a data set be created that more evenly represents each reigon.</li>
           </ul> 
         </div>
           <span class="border border-info"></span>
@@ -83,12 +83,17 @@
         <div class="container">
           <div class="row">
             <div class="col">
-            <div class='tableauPlaceholder' width=500 height=500 id='viz1607046006027' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalMusicRegionSub-RegionCountry&#47;Region&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GlobalMusicRegionSub-RegionCountry&#47;Region' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalMusicRegionSub-RegionCountry&#47;Region&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607046006027');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
-            <div class="col"><img src="static/images/svm_default_region.png"></div>
-            <div class="w-100"></div>
-            <div class="col"><img src="static/images/svm_chromatic_region.png"></div>
+              <div class='tableauPlaceholder' width=500 height=500 id='viz1607046006027' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalMusicRegionSub-RegionCountry&#47;Region&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GlobalMusicRegionSub-RegionCountry&#47;Region' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlobalMusicRegionSub-RegionCountry&#47;Region&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607046006027');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+            </div>
+          </div>
         </div>
-    </div>
+        <div class ="container">
+          <div class="row">
+            <div class="col"><img src="static/images/svm_default_region.png"></div>
+            <div class="col"><img src="static/images/svm_chromatic_region.png"></div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
 
