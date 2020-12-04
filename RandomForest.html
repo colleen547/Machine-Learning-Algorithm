@@ -11,37 +11,51 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="static/css/style.css">
 
-    <!--Navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-    </ul>
-  </nav>
-</div>
+  </head>
+  <body>
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
- <!--end of Navigation bar-->
+    <!-- Included jquery for sharing common html -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+   
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("static/common_html/nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div id="nav-placeholder">
 
      <header>
       <div class="container">
-        <div id="branding">
-          <h1><i class="fa fa-rocket"></i> <span class="highlight"><strong>Random Forests</strong></span> <strong>Algorithm</strong></h1>
-          <img src="static/images/forest_wide.gif" width="cover" height="cover" ><br>
-          <img  alt=""> <br> 
-        </div>   
- 
+        <div id="branding">  
+        </div>  
     </header>
- 
     <div id="nav-placeholder">
 
     <!--Intro-->
 
-    <section id="showcase">
+   <div class="container">
+
+        <h1 class="display-4">Random Forest Algorithm</h1>
+        <p class="lead">Utilizing The Random Forest Algorithm to Predict Global Origin of World Music.</p>
+        <hr class="my-4">
+     
+            <img src="static/images/forest_wide.gif" width="100%" height="100%" ><br>
+            <img  alt=""> <br> 
+        <hr class="my-4">
+      </div>
+      
       <div class="container">
         <h1><strong>Introduction to Decision Trees and Random Forests.</strong></h1>
         <p><h2></h2>Decision trees are a predictive model that uses a set of binary rules applied to calculate a target value. Can be used for classification 
@@ -75,7 +89,11 @@
             A different subset of the training data are selected (~2/3), with replacement, to train each tree 
             Remaining training data (OOB) are used to estimate error and variable importance.  
             Class assignment is made by the number of votes from all of the trees and for regression the average of the results is used.</p><br
+
+            ></div>
+
         ></div>
+
       </div>
     </section>
     <!-- ======= Analysis & Visualization Section ======= -->
