@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <style>
+      img {
+          max-width: 100%;
+      }
+      </style>
+
+    <div class="fullscreen-bg">
+      <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="static/videos/musical-note-animation-vertical-side-rendering-background-loop.mp4" type="video/ogg">
+      </video>
+    </div>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title>Support Vector Machine for Regression and
+      Classification</title>
+  </head>
+
+  <body>
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  
+    <!-- Included jquery for sharing common html -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+  
+    </div>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("static/common_html/nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+    <div class="container">
+      <!-- Row 1 -->
+      <div class="media">
+          <div class="media-body">
+              <h2 class="mt-0">Support Vector Machine</h2>
+              <br>
+              <h5 style="color:rgb(22, 20, 136); class="mt-0">What is Support Vector Machine (SVM)?</h5>
+              <p>Support Vector Machine (SVM) is a supervised machine learning algorithm capable of performing classification, regression as well as outlier detection.
+                However,  it is mostly used in classification problems. 
+                <br>  
+                In the SVM algorithm, we plot each data item as a point in a dimensional space (where n is number of features you have) with the value of each feature being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiates the two classes.
+                <br>
+                Support Vector Regression works in the same way as classification, with only a few minor differences. In the case of regression, since the output is a real number, the output becomes difficult to predict since it has infinite possibilities. The goal of the SVR (Support Vector Regression) then becomes to minimize the error.
+              <br>
+              <center><img src="static/images/machine.gif" width="40%" height="40%" class="d-inline-block align-centre"><br></center><br>  
+              <img src="" alt="">
+              <center><p class="font-weight-bold">“The idea of SVM is simple: The algorithm creates a line or a hyperplane which separates the data into classes.</center>
+              <br><br>
+              <h5 style="color:rgb(22, 20, 136); class="mt-0"> How to Interpret a Classification Report</h5>
+              <br>
+              <ul>
+                  <li><b>PRECISION</b> - Precision is a <b>measure of a classifier’s exactness</b>. It is <u>the fraction of predicted positives events that are actually
+                    positive.</u> For each class, it is defined as the ratio of true positives to the sum of true & false positives. Said 
+                    another way, “for all instances classified positive, what percent was correct?"
+                  </li>
+                  <p></p>
+                  <li><b>RECALL</b> - Recall (<b>also known as sensitivity</b>) is <u>the fraction of positives events that you predicted correctly</u>.
+                    Recall is a measure of the classifier’s completeness; the ability of a classifier to correctly find all positive 
+                    instances. For each class, it is defined as the ratio of true positives to the sum of true positives & false 
+                    negatives. Said another way, “for all instances that were actually positive, what percent was classified correctly?”
+                  </li>
+                  <p></p>
+                  <li><b>F1 SCORE</b> - The f1 score is <u>the harmonic mean of recall and precision</u>, with a higher score as a better model.
+                    The F1 score is the weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0</b>.
+                    Generally speaking F1 scores are lower than accuracy measures as they embed precision and recall into their 
+                    computation. <b><mark>As a rule of thumb, the weighted average of F1 should be used to compare classifier models, not global 
+                    accuracy.</b><mark>
+                  </li>
+                  <p></p>
+                  <li><b>SUPPORT</b> - Support is <u>the number of actual occurrences of the class in the specified dataset</u>. Imbalanced support in the training
+                    data may indicate structural weaknesses in the reported scores of the classifier and could indicate the need for 
+                    stratified sampling or rebalancing. Support doesn’t change between models, instead it <b>diagnoses the evaluation process</b>.
+                  </li>
+                  <p></p>
+                  <li><b><i>ACCURACY</i></b> - The most common metric for classification is Accuracy, which is the fraction of samples predicted correctly.  
+                    However, Accuracy is not always the best metric to use to assess classification models.
+                  </li>
+                  <li><b><i>MACRO AVERAGE</i></b>
+                    Macro Average takes the function to compute f1 for each label, and returns the average without considering the 
+                    proportion for each label in the dataset.
+                  </li>
+                  <li><b><i>WEIGHTED AVERAGE</i></b> - Weighted Average takes the function to compute f1 for each label, and returns the average considering the proportion
+                    for each label in the dataset.
+                  </li>
+              </ul>
+              <br></br>
+              <center><img src="static/images/technology_concept.png" class="align-self-center mr-3" width=250 height=250></center>
+              <br>
+              <br>
+              <h5 style="color:rgb(22, 20, 136)> How we used SVM</h5>
+              <p>We used SVM as a classifier for our project.  We ran two different data sets through the algorithm. One was the default data set with the original 67 musical indicators. The second data set contained an additional 40+ musical properties for each song.
+                  We wanted to see if the algorithm was more successful with one data set over the other.
+                  We first split the music data into training and testing sets. The data was then encoded for analysis, and scaled using a Standard Scaler. 
+                  A SVM classifier model was created, which looped through the various K values. The results indicate that K=9 leads to the most stable and accurate classification results.</p>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col"><left><img src="static/images/svm_default.png"></left></div>
+                      <div class="col"><right><img src="static/images/svm_chromatic.png"></right></div>
+                      <div class="w-100"></div>
+                      <br>
+                      <div class="col"><center><p>Weighted Average of F1 was 0.40</p></center></div>
+                      <div class="col"><center><p>Weighted Average of F1 was 0.41</p></center></div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </body>
+
+
+
+</html>
