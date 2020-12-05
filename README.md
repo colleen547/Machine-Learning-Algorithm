@@ -20,7 +20,7 @@ Predicting the Geographical Origin of Music, ICDM, 2014
 
 ## Data Cleaning
 
-The existing data itself requried no cleaning. Instead, we had to add to the existing data by finding the country. Instead of providing the country, the data set provides the latitude and longitude of the capital for a given country.
+The existing data itself required no cleaning. Instead, we had to add to the existing data by finding the country. Instead of providing the country, the data set provides the latitude and longitude of the capital for a given country.
 
 We expected that attempting to predict an exact country would be too granular, and instead we opted to break the world up into region and sub-region delinations. This process is based on the United Nations [UN M49](https://en.wikipedia.org/wiki/UN_M49) area codes.
 
@@ -38,7 +38,7 @@ Using the Google geocoding API, we obtained the two letter country code for the 
 
 * Use NewPythonData environment for data cleaning
 * Add config.py file to project directory
-  * Add to config.py: gkey = 'Your geocoding api key here'
+* Add to config.py: gkey = 'Your geocoding api key here'
 * Launch and run all of Global Regions.ipynb
-  * This will no longer run properly. As of November 25 2020, the table format changed. Since we already obtained and saved our data, we did not change it to work with the new formatting.
+* This will no longer run properly. As of November 25 2020, the table format changed. Since we already obtained and saved our data, we did not change it to work with the new formatting.
 * Launch and run all of Clean Data.ipynb

@@ -41,11 +41,13 @@
           Our exploration of the two data sets with the three aforementioned machine learning algorithms returned some surprising results. Of note:
           <ul>
             <p></p>
-            <li>For two of the algorithms, the additional inputs in the chromatic dataset did not lead to a more accuratate outcome. Perhaps the extra inputs created too much noise. The fact that the chromatic dataset is based on the western, 12 note scale could also lead to confusion.</li>
+            <li>The additional inputs in the chromatic dataset did not lead to a more accuratate outcome. Perhaps the extra inputs created too much noise. The fact that the chromatic dataset is based on the western, 12 note scale could also lead to confusion.</li>
             <p></p>
-            <li>The Sub-Region results did not accomplish accuracy greater than 50%, so we investigated results using the Regions (a much broader category). The results from this testing is shown below.</li>
+            <li>The Sub-Region results did not accomplish accuracy greater than 50%, so we investigated results using the Regions (a much broader category). The results from this testing are shown on the right.</li>
             <p></p>
-            <li>As you can see the most accurate Region predictions tended to correlate with Regions that had a lot of data. For this reason, we suggest in the future, a data set be created that more evenly represents each reigon.</li>
+            <li>As you can see below, the most accurate Region predictions tends to correlate with the Regions that contain the most song data. To improve future accuracy, we suggest normalizing the data via scaling or including a similar amount of song data per Region to more evenly represent each region.</li>
+            <p></p>
+            <li>Otherwise additional strategies to improve the results of the algorithms include hyperparameter optimization or tuning model parameters to improve the outcome. </li>
           </ul> 
         </div>
           <span class="border border-info"></span>
@@ -72,8 +74,8 @@
                     </tr>
                     <tr>
                       <th scope="row">SVM</th>
-                      <td>0.390</td>
-                      <td>0.410</td>
+                      <td>0.560</td>
+                      <td>0.570</td>
                     </tr>
                   </tbody>
                 </table>
