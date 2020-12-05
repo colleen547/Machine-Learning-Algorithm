@@ -28,6 +28,7 @@ We obtained the UN M49 area codes using Pandas read HTML function, along with [a
 
 Using the Google geocoding API, we obtained the two letter country code for the given coordinates. This two letter code was compared to our UN area code dataframe to find the region and sub-region for each country.
 
+
 ### Inconsitencies
 
 * For the UN M49 system, South America is the only continent that doesn't contain any subregions.
@@ -42,3 +43,8 @@ Using the Google geocoding API, we obtained the two letter country code for the 
 * Launch and run all of Global Regions.ipynb
 * This will no longer run properly. As of November 25 2020, the table format changed. Since we already obtained and saved our data, we did not change it to work with the new formatting.
 * Launch and run all of Clean Data.ipynb
+
+### Please install the following in order to run SVM.ipynb jupyter notebook files
+
+Yellowbrick is specifically designed to work with scikit-learn. The primary interface is therefore a Visualizer – an object that learns from data to produce a visualization. 
+* pip install yellowbrick
