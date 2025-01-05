@@ -48,3 +48,4 @@ Using the Google geocoding API, we obtained the two letter country code for the 
 
 Yellowbrick is specifically designed to work with scikit-learn. The primary interface is therefore a Visualizer – an object that learns from data to produce a visualization. 
 * pip install yellowbrick
+  
