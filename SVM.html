@@ -73,15 +73,15 @@
                   <!-- nested list -->
                   <ul style="list-style-type:disk">
                     <li>SVM works best when there is a margin of separation.</li>
-                    <li>SVM is effective in high dimensional spaces.</li>
-                    <li>It is effective in cases where the number of dimensions are greater than the number of samples.</li>
+                    <li>SVM is effective in high-dimensional spaces.</li>
+                    <li>It is effective in cases where the number of dimensions is greater than the number of samples.</li>
                     <li>It uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.</li>
                   </ul>
                 </li>
                 <li><b>CONS:</b>
                   <ul style="list-style-type:disk">
-                    <li>It doesn’t perform well when we have large data set because the required training time is higher.</li>
-                    <li><mark>SVM doesn't perform well when the data set has more noise i.e. target classes are overlapping</mark></li>
+                    <li>It doesn’t perform well with a large data set because the required training time is higher.</li>
+                    <li><mark>SVM doesn't perform well when the data set has more noise, i.e., target classes are overlapping</mark></li>
                     <li>It doesn’t directly provide probability estimates.</li>
                   </ul>
                 </li>
@@ -90,35 +90,35 @@
               <h5 style="color:rgb(22, 20, 136)"; class="mt-0"> How to Interpret a Classification Report</h5>
               <br>
               <ul style="list-style-type:disk">
-                  <li><b>PRECISION</b> - Precision is a measure of a classifier’s <b>exactness</b>. It is <u>the fraction of predicted positives events that are actually
+                  <li><b>PRECISION</b> - Precision is a measure of a classifier’s <b>exactness</b>. It is <u>the fraction of predicted positive events that are actually
                     positive.</u> For each class, it is defined as the ratio of true positives to the sum of true & false positives. Said 
                     another way, “for all instances classified positive, what percent was correct?"
                   </li><br>
                   <li><b>RECALL</b> - Recall (also known as <b>sensitivity</b>) is <u>the fraction of positives events that you predicted correctly</u>.
                     Recall is a measure of the classifier’s completeness; the ability of a classifier to correctly find all positive 
-                    instances. For each class, it is defined as the ratio of true positives to the sum of true positives & false 
-                    negatives. Said another way, “for all instances that were actually positive, what percent was classified correctly?”
+                    instances. Each class is defined as the ratio of true positives to the sum of true positives & false 
+                    negatives. Said another way, “For all positive instances, what percent was classified correctly?”
                   </li><br>
                   <li><b>F1 SCORE</b> - The f1 score is <u>the harmonic <b>mean of recall and precision</b></u>, with a higher score as a better model.
                     The F1 score is the weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0</b>.
-                    Generally speaking F1 scores are lower than accuracy measures as they embed precision and recall into their 
+                    Generally speaking, F1 scores are lower than accuracy measures as they embed precision and recall into their 
                     computation. <b><mark>As a rule of thumb, the weighted average of F1 should be used to compare classifier models, not global 
                     accuracy.</b><mark>
                   </li><br>
                   <li><b>SUPPORT</b> - Support is <u>the number of actual occurrences of the class in the specified dataset</u>. Imbalanced support in the training
                     data may indicate structural weaknesses in the reported scores of the classifier and could indicate the need for 
-                    stratified sampling or rebalancing. Support doesn’t change between models, instead it <b>diagnoses the evaluation process</b>.
+                    stratified sampling or rebalancing. Support doesn’t change between models. Instead, it <b>diagnoses the evaluation process</b>.
                   </li><br>
                   <p></p>
                     <ul style="list-style-type:round">
                       <li><b><i>ACCURACY</i></b> - The most common metric for classification is Accuracy, which is the fraction of samples predicted correctly.  
-                      <br>However, Accuracy is not always the best metric to use to assess classification models.
+                      <br>However, Accuracy is not always the best metric to assess classification models.
                       </li>
                       <li><b><i>MACRO AVERAGE</i></b>
-                        Macro Average takes the function to compute f1 for each label, and returns the average without considering the 
+                        Macro Average takes the function to compute f1 for each label and returns the average without considering the 
                         proportion for each label in the dataset.
                       </li>
-                      <li><b><i>WEIGHTED AVERAGE</i></b> - Weighted Average takes the function to compute f1 for each label, and returns the average considering the proportion
+                      <li><b><i>WEIGHTED AVERAGE</i></b> - Weighted Average takes the function to compute f1 for each label and returns the average considering the proportion
                         for each label in the dataset.
                       </li>
                     </ul>
@@ -129,8 +129,8 @@
               <h5 style="color:rgb(22, 20, 136)"> Analysis and Results</h5>
               <p>SVM was the third machine learning algorithm used for our project. 
                 Both the default dataset containing 68 song features and the chromatic data set containing an additional 40+ musical properties for each song were used in the analysis.
-                We first split the music data into training and testing sets. The data was then encoded for analysis and an SVM classifier model was created using both the default and chromatic dataset for Sub-Region.
-                Because the data is clustered closely together when the SVM classification algorithm is performed, it difficult for the hyper-plane to differentiate between the features and seperate them into classes.                </p>
+                I first split the music data into training and testing sets. The data was then encoded for analysis, and an SVM classifier model was created using both the default and chromatic datasets for the sub-region.
+                Because the data is clustered closely when the SVM classification algorithm is performed, it is difficult for the hyper-plane to differentiate between the features and separate them into classes.                </p>
                 <div><center><img src="static/images/SVM_chromatic_linearly_seperable_data.png"></center></div>
                 <br><br>
                 <p><b><center>Classification Reports for the Sub-Region level of the datasets are shown below.</center></b></p>
